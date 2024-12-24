@@ -24,6 +24,7 @@ export const findAllUsers = async (dispatch) => {
 }
 export const findUserById = async (dispatch, userId) => {
     const user = await service.findUserById(userId);
+    //haha
     dispatch({
         type: FIND_USER_BY_ID,
         user
