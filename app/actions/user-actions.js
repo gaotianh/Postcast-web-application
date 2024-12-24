@@ -16,6 +16,7 @@ export const createUser = async (dispatch, user) => {
 
 export const findAllUsers = async (dispatch) => {
     const users = await service.findAllUsers();
+    
     dispatch({
         type: FIND_ALL_USERS,
         users
